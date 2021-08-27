@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 
 exports.connect = () => {
-  // Connecting to the database
   mongoose
     .connect("mongodb://localhost:27017/firstProject", {
       useNewUrlParser: true,
