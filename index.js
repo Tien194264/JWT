@@ -1,17 +1,6 @@
-// const http = require("http");
-// const app = require("./app");
-// const server = http.createServer(app);
-
-const express = require("express");
-
 require("dotenv").config();
 require("./app/config/database.js").connect();
-
-const jwt = require("jsonwebtoken");
-
-const User = require("./app/model/user");
-const auth = require("./app/middleware/auth");
-const { connect } = require("mongoose");
+const express = require("express");
 
 const app = express();
 
