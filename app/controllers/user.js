@@ -1,7 +1,7 @@
 const User = require("../model/user.js");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const auth = require("./app/middleware/auth");
+
 
 exports.Register = async (req, res) => {
   try {
@@ -80,7 +80,7 @@ exports.Login = async (req, res) => {
 };
 
 exports.Home = (req, res) => {
-  res.sendStatus(200).send("Welcome to Vietnamese");
+  res.status(200).send("Welcome to Vietnam");
 };
 
 
