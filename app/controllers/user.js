@@ -1,6 +1,8 @@
 const User = require("../model/user.js");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+const auth = require("./app/middleware/auth");
+
 exports.Register = async (req, res) => {
   try {
     // Get user input
