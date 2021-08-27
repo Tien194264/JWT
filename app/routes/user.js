@@ -8,5 +8,4 @@ module.exports = (app) => {
 
   app.get("/welcome", user.Home);
   
-  app.get("/*", user.Founded);
 };

@@ -83,9 +83,4 @@ exports.Home = (req, res) => {
   res.sendStatus(200).send("Welcome to Vietnamese");
 };
 
-exports.Founded = (req, res) => {
-   return res.Status(404).send({
-    message: "Not found page!",
-    statusCode: 404,
-  });
-};
+
